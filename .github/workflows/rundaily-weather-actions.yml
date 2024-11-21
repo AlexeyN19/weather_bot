@@ -2,9 +2,9 @@ name: Daily Runner Weather Bot
 
 on: 
     # push:
-    # workflow_dispatch:
-    schedule:
-        - cron: '*/2 * * * *'
+    workflow_dispatch:
+    # schedule:
+    #     - cron: '*/2 * * * *'
 
 env:
     TG_BOT_TOKEN: ${{secrets.TG_BOT_TOKEN}}
