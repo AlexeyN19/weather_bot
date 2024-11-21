@@ -51,7 +51,7 @@ def get_weather():
 def send_message(message):
 
     TG_BOT_TOKEN = os.getenv('TG_BOT_TOKEN')
-    TG_CH_ID = os.getenv('TG_CH_ID_AtashaDesigner')
+    TG_CH_ID = os.getenv('TG_CH_ID')
 
     url = f'https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage'
     params = {
