@@ -3,6 +3,10 @@ name: Daily Runner Weather Bot
 on: 
     push:
 
+env:
+    TELEGRAM_TOKEN:${{secrets.TELEGRAM_TOKEN}}
+    TELEGRAM_CH_ID: ${{secrets.TELEGRAM_CH_ID}}
+
 jobs:
     Daily-Run:
         runs-on: ubuntu-latest
@@ -11,7 +15,5 @@ jobs:
               uses: actions/checkout@v4
             - name: Install Dependencies
               run: pip install -r requirements.txt
-            - name: install pywin
-              run: python -m pip install --upgrade pywin32
             - name: Run App
               run: python app.py
