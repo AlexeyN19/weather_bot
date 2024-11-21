@@ -4,7 +4,7 @@ on:
     push:
 
 env:
-    TELEGRAM_TOKEN:${{secrets.TELEGRAM_TOKEN}}
+    TELEGRAM_TOKEN: ${{secrets.TELEGRAM_TOKEN}}
     TELEGRAM_CH_ID: ${{secrets.TELEGRAM_CH_ID}}
 
 jobs:
