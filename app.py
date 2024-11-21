@@ -22,7 +22,7 @@ def get_weather():
         "latitude": 47.8517,
         "longitude": 35.1171,
         "hourly": "temperature_2m",
-        "forecast_days": 2
+        "forecast_days": 1
     }
     responses = openmeteo.weather_api(url, params=params)
 
