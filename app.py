@@ -60,7 +60,7 @@ def send_message(message):
     }
     res = requests.post(url, params=params)
     res.raise_for_status
-    return res.json()
+    print( res.json())
 
 
 if __name__ == "__main__":
