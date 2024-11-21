@@ -2,12 +2,13 @@ name: Daily Runner Weather Bot
 
 on: 
     # push:
+    # workflow_dispatch:
     schedule:
         - cron: '*/2 * * * *'
 
 env:
-    TELEGRAM_TOKEN: ${{secrets.TG_BOT_TOKEN}}
-    TELEGRAM_CH_ID: ${{secrets.TG_CH_ID}}
+    TG_BOT_TOKEN: ${{secrets.TG_BOT_TOKEN}}
+    TG_CH_ID: ${{secrets.TG_CH_ID}}
 
 jobs:
     Daily-Run:
